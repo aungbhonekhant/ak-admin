@@ -1,4 +1,4 @@
-import { AttachMoney, BarChart, ChatBubbleOutline, DynamicFeed, HomeOutlined, MailOutline, PermIdentity, RestartAlt, Storefront, Timeline, TrendingUp, Login, AppRegistrationOutlined } from '@mui/icons-material';
+import { AttachMoney,ErrorOutline, BarChart, ChatBubbleOutline, DynamicFeed, HomeOutlined, MailOutline, PermIdentity, RestartAlt, Storefront, Timeline, TrendingUp, Login, AppRegistrationOutlined } from '@mui/icons-material';
 import React from 'react';
 import { motion } from "framer-motion";
 import './sideBar.css';
@@ -172,6 +172,58 @@ export default function SideBar({show}) {
                             >
                                 <RestartAlt className="sideBarIcon"/>
                                 Recovery Password
+                            </motion.li>
+                        </Link>
+                    </ul>
+                    {/* sidebar list end */}
+                </div>
+
+                <div className="sideBarMenu"> 
+                    <div className="sideBarTitle">
+                        <span>Error Pages</span> 
+                        {/* <ArrowDropDown />  */}
+                    </div>
+                    {/* sidebar list */}
+                    <ul className="sideBarList">
+                        <Link to="/page_not_found" className="link">
+                            <motion.li
+                                initial={{x: -10}}
+                                animate={{ x: 0 }}
+                                transition={{ duration: 1 }}className="sideBarListItem"
+                            >
+                                <ErrorOutline className="sideBarIcon" />
+                                404
+                            </motion.li>
+                        </Link>
+                        <Link to="/internal_server_error" className="link">
+                            <motion.li
+                                initial={{x: -10}}
+                                animate={{ x: 0 }}
+                                transition={{ duration: 1 }}className="sideBarListItem"
+                            >
+                                <ErrorOutline className="sideBarIcon"/>
+                                500
+                            </motion.li>
+                        </Link>
+
+                        <Link to="/services_unavailable" className="link">
+                            <motion.li
+                                initial={{x: -10}}
+                                animate={{ x: 0 }}
+                                transition={{ duration: 1 }}className="sideBarListItem"
+                            >
+                                <ErrorOutline className="sideBarIcon"/>
+                                503
+                            </motion.li>
+                        </Link>
+                        <Link to="/maintenance" className="link">
+                            <motion.li
+                                initial={{x: -10}}
+                                animate={{ x: 0 }}
+                                transition={{ duration: 1 }}className="sideBarListItem"
+                            >
+                                <ErrorOutline className="sideBarIcon"/>
+                                Site Maintenance
                             </motion.li>
                         </Link>
                     </ul>
