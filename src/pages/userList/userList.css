@@ -1,0 +1,84 @@
+.userList{
+    flex: 6;
+    padding: 0 1.25rem;
+}
+.userListShow{
+    width: auto;
+    height: 100vh;
+}
+.userListTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+.userAddButton {
+    width: 5rem;
+    border: none;
+    padding: 0.313rem;
+    background: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    border-radius: 0.375rem;
+    color: #fff;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+        0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.userListUser{
+    display: flex;
+    align-items: center;
+}
+
+.userListImg{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.625rem;
+}
+
+.userListEdit{
+    border: none;
+    border-radius: 0.375rem;
+    background: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+        0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 0.313rem 0.625rem;
+    color: #fff;
+    margin-right: 1.25rem;
+}
+
+.userListDelete{
+    cursor: pointer;
+}
+
+.MuiDataGrid-root{
+    color: #bfc9d4 !important;
+    padding: 1.875rem;
+    border: none !important;
+    background-color: #0e1726 !important;
+    border-radius: 0.635rem !important;
+    box-shadow: 0 0.1px 0px rgba(0, 0, 0, 0.002), 0 0.2px 0px rgba(0, 0, 0, 0.003),
+    0 0.4px 0px rgba(0, 0, 0, 0.004), 0 0.6px 0px rgba(0, 0, 0, 0.004),
+    0 0.9px 0px rgba(0, 0, 0, 0.005), 0 1.2px 0px rgba(0, 0, 0, 0.006),
+    0 1.8px 0px rgba(0, 0, 0, 0.006), 0 2.6px 0px rgba(0, 0, 0, 0.007),
+    0 3.9px 0px rgba(0, 0, 0, 0.008), 0 7px 0px rgba(0, 0, 0, 0.01) !important;
+    outline: none !important;
+}
+.MuiDataGrid-root .MuiDataGrid-columnSeparator{
+    color: #1abc9c !important;
+}
+.MuiIconButton-label{
+    color: #1abc9c  !important;
+}
+.MuiTablePagination-root{
+    color: #bfc9d4 !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnsContainer,
+.MuiDataGrid-root .MuiDataGrid-cell {
+    border-bottom: 1px solid #191e3a  !important;
+}

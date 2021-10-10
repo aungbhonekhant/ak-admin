@@ -1,0 +1,100 @@
+.widgetSm {
+  flex: 1;
+}
+
+.widgetSmTitle {
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.widgetSmImg {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widgetSmList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widgetSmListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.25rem 0rem;
+}
+
+.widgetSmUser {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetSmUsername {
+    font-weight: 600;
+}
+.widgetSmUserTitle {
+    font-weight: 300;
+}
+
+.widgetSmButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0.375rem;
+    background: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+        0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 0.438rem 0.375rem;
+}
+
+.widgetSmIcon {
+    font-size: 1;
+    margin-right: 0.313rem;
+    
+}
+
+
+@media only screen and (max-width: 725px) {
+    .widgetSmList{
+        overflow-x: scroll;
+    }
+
+    .widgetSmUsername,.widgetSmUserTitle, .widgetSmButton{
+        font-size: 13px;
+    }
+    .widgetSmButton{
+        padding: 0.313rem 0.25rem;
+    }
+    
+    .widgetSmButton > svg{
+        width: 0.7em;
+        height: 0.7em;
+    }
+    .widgetSmImg{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .widgetSmUsername,.widgetSmUserTitle, .widgetSmButton{
+        font-size: 14px;
+    }
+    .widgetSmButton{
+        padding: 0.313rem 0.25rem;
+    }
+    
+    .widgetSmButton > svg{
+        width: 0.7em;
+        height: 0.7em;
+    }
+    .widgetSmImg{
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+     
+}

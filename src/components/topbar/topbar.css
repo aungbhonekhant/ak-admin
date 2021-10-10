@@ -1,0 +1,116 @@
+.topbar {
+  width: 100%;
+  height: 3.125rem;
+  background-color: rgb(26, 28, 45);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarWrapper {
+  height: 100%;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topLeft{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbarLogo {
+  font-family: "Pacifico", sans-serif;
+  font-weight: bold;
+  font-size: 1.875rem;
+  cursor: pointer;
+  color: #e0e6ed ;
+}
+
+.menuIcon{
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.topRight{
+  display: flex;
+  align-items: center;
+}
+
+.topbarIconContainer {
+  position: relative;
+  cursor: pointer;
+  margin-right: 0.625rem;
+  color: #888ea8;
+}
+
+.topIconBadge {
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 10px;
+  background: #1abc9c;
+  top: -1px;
+  right: 3px;
+  cursor: pointer;
+}
+
+.topIconBadge:hover {
+  top: -5px;
+  transition: top 1s ease 0s;
+}
+
+.topIconNoti:hover{
+  animation: myAnim 1s ease 0s 1 normal forwards
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-3px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(2px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-2px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(1px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-0.7px) rotate(1.2deg);
+  }
+}
+
+.topAvatar{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #384d71;
+  cursor: pointer;
+}
+
+.topAvatar:hover{
+  border: 1px solid #1abc9c;
+}
+
+@media only screen and (max-width: 1025px){
+  .topbarLogoRight{
+    display: none;
+  }
+}

@@ -1,0 +1,83 @@
+.widgetLg {
+  flex: 2;
+}
+.widgetLgTitle {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.widgetLgTable {
+  width: 100%;
+  background-color: #0e1726 !important;
+  border-spacing: 1.25rem;
+  border-collapse: separate;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.widgetLgTh {
+  text-align: left !important;
+  color: #888ea8 !important;
+  padding: 1rem 0 !important;
+  border-bottom: none !important;
+}
+
+.widgetLgUser {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  color: #888ea8 !important;
+  padding: 1rem 0 !important;
+  border-bottom: none !important;
+}
+
+.widgetLgImg {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  margin-right: 0.625rem !important;
+}
+
+.widgetLgDate,.widgetLgAmount{
+    font-weight: 300 !important;
+    color: #888ea8 !important;
+    padding: 1rem 0 !important;
+    border-bottom: none !important;
+}
+
+.widgetLgStatus{
+  padding: 1rem 0 !important;
+  border-bottom: none !important;
+}
+
+.widgetLgButton {
+  font-size: 0.75rem ;
+  padding: 0.188rem 0.375rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.widgetLgButton:hover{
+    background: none !important;
+}
+
+@media only screen and (max-width: 725px) {
+  .widgetLgTh, .widgetLgName, .widgetLgDate, .widgetLgAmount, .widgetLgStatus{
+    font-size: 13px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .widgetLgUser{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .amount{
+    display: none !important;
+  }
+}

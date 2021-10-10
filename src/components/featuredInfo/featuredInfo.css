@@ -1,0 +1,90 @@
+.featured {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.featuredItem {
+  flex: 1;
+  margin: 0 1.25rem;
+  padding: 1.875rem;
+  background-color: #0e1726;
+  border-radius: 0.635rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0.1px 0px rgba(0, 0, 0, 0.002), 0 0.2px 0px rgba(0, 0, 0, 0.003),
+    0 0.4px 0px rgba(0, 0, 0, 0.004), 0 0.6px 0px rgba(0, 0, 0, 0.004),
+    0 0.9px 0px rgba(0, 0, 0, 0.005), 0 1.2px 0px rgba(0, 0, 0, 0.006),
+    0 1.8px 0px rgba(0, 0, 0, 0.006), 0 2.6px 0px rgba(0, 0, 0, 0.007),
+    0 3.9px 0px rgba(0, 0, 0, 0.008), 0 7px 0px rgba(0, 0, 0, 0.01);
+}
+
+.featuredTitle{
+    font-size: 1.24rem;
+    color: #fff;
+
+}
+.featuredMoneyContainer{
+    margin: 0.635rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.featuredMoney{
+    font-size: 1.635rem;
+    font-weight: bold;
+}
+
+.featuredMoneyRate{
+    display: flex;
+    align-items: center;
+    margin-left: 1.24rem;
+}
+
+.featuredIcon{
+    font-size: 0.875rem;
+    margin-left: 0.313rem;
+    color: green;
+}
+
+.negative{
+    color: red;
+}
+
+.featuredSub{
+    font-size: 0.938rem;
+}
+
+@media only screen and (max-width: 885px) {
+    .featured {
+        padding: 0 1.25rem;
+    }
+    .featuredItem{
+        margin: 0;
+        padding: 1rem;
+    }
+    .featuredItem:not(:last-child){
+        margin-right: 0.5rem;
+    }
+    .featuredMoney{
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .featured{
+       flex-direction: column;
+       padding: 0;
+    }
+    .featuredItem{
+        margin: 0 1.25rem !important;
+        margin-bottom: 1rem !important;
+        justify-content: center;
+        text-align: center;
+    }
+    .featuredMoneyContainer{
+        display: flex;
+        justify-content: center;
+    }
+}
