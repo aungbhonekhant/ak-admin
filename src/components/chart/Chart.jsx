@@ -36,9 +36,9 @@ export default function Chart({title, data, dataKey, grid, height}) {
                     {   
                         Array.isArray(dataKey) ? 
                         dataKey.map(data => 
-                            <Line type="monotone" dataKey={data.key} strokeWidth={2} stroke={data.color}/>
+                            <Line key={data.key} type="monotone" dataKey={data.key} strokeWidth={2} stroke={data.color}/>
                         )
-                        : 
+                        :
                         <Line type="monotone" dataKey={dataKey} strokeWidth={2} />
                     }
                 </LineChart>

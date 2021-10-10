@@ -10,7 +10,6 @@ import { useMediaQuery } from 'react-responsive';
 
 export default function ProductList() {
     const [products, setProducts] = useState(productRows);
-    const lg = useMediaQuery({ query: '(min-width: 1824px)' })
     const md = useMediaQuery({ query: '(max-width: 1224px)' })
     const s = useMediaQuery({ query: '(max-width: 991px)' })
     const xs = useMediaQuery({ query: '(max-width: 725px)' })
@@ -109,7 +108,7 @@ export default function ProductList() {
                             columns={columns}
                             pageSize={10}
                             rowsPerPageOptions={
-                                [5]
+                                [10]
                             }
                             checkboxSelection
                             disableSelectionOnClick

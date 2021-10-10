@@ -30,17 +30,17 @@ export default function SignUp() {
                             <form className="signUpForm">
                                 <div className="form">
                                     <div className="signUpFormItem">
-                                        <label for="username">USERNAME</label>
+                                        <label htmlFor="username">USERNAME</label>
                                         <PersonOutline className="userIcon" />
                                         <input type="text" id="username" name="username" placeholder="Username"/>
                                     </div>
                                     <div className="signUpFormItem">
-                                        <label for="email">EMAIL</label>
+                                        <label htmlFor="email">EMAIL</label>
                                         <AlternateEmailOutlined className="emailIcon" />
                                         <input type="email" id="email" name="email" placeholder="Email"/>
                                     </div>
                                     <div className="signUpFormItem">
-                                        <label for="password">PASSWORD</label>
+                                        <label htmlFor="password">PASSWORD</label>
                                         <LockOutlined className="passwordIcon" />
                                         <input type={type} id="password" name="password" placeholder="Password"/>
                                         <span onClick={showPass}>

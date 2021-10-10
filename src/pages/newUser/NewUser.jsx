@@ -44,15 +44,15 @@ export default function NewUser() {
                         <div className="newUserGender">
                             <div>
                                 <input type="radio" name="gender" id="male" value="male"/>
-                                <label for="male">Male</label>
+                                <label htmlFor="male">Male</label>
                             </div>
                             <div>
                                 <input type="radio" name="gender" id="female" value="female"/>
-                                <label for="female">Female</label>
+                                <label htmlFor="female">Female</label>
                             </div>
                             <div>
                                 <input type="radio" name="gender" id="other" value="other"/>
-                                <label for="other">Other</label>
+                                <label htmlFor="other">Other</label>
                             </div>
                         </div>
                     </div>

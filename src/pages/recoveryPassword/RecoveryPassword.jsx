@@ -12,7 +12,7 @@ export default function RecoveryPassword() {
                             <p className="formDescription">Enter your email and instructions will sent to you!</p>
                             <form className="recoveryPassForm">
                                     <div className="recoveryPassFormItem">
-                                        <label for="email">EMAIL</label>
+                                        <label htmlFor="email">EMAIL</label>
                                         <AlternateEmailOutlined className="emailIcon" />
                                         <input type="email" id="email" name="email" placeholder="Email"/>
                                     </div>

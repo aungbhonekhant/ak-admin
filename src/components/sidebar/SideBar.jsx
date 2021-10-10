@@ -3,10 +3,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 import './sideBar.css';
 import { Link } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive'
 
 export default function SideBar({show}) {
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 991px)' })
     return (
         // sidebar start
         <div className={`sideBar ${ !show ? "hideSideBar" : "showSideBar"}`}> 

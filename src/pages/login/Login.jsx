@@ -27,13 +27,13 @@ export default function Login() {
                             <form className="loginForm">
                                 <div className="form">
                                     <div className="loginFormItem">
-                                        <label for="username">USERNAME</label>
+                                        <label htmlFor="username">USERNAME</label>
                                         <PersonOutline className="userIcon" />
                                         <input type="text" id="username" name="username" placeholder="e.g John_Snow"/>
                                     </div>
                                     <div className="loginFormItem">
                                         <div className="loginLabelContainer">
-                                            <label for="password">PASSWORD</label>
+                                            <label htmlFor="password">PASSWORD</label>
                                             <Link to="/recovery_pass" className="loginForgotPass link">Forgot Password?</Link>
                                         </div>
                                         

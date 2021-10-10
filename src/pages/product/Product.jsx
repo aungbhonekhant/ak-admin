@@ -91,7 +91,7 @@ export default function Product() {
                         <div className="productFormRight">
                             <div className="productUpload">
                                 <img src="https://images.pexels.com/photos/5750001/pexels-photo-5750001.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="productUploadImg" />
-                                <label for="file">
+                                <label htmlFor="file">
                                     <Publish />
                                 </label>
                                 <input type="file" id="file" className="productUploadImgInput" />

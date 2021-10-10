@@ -1,4 +1,4 @@
-import {Language, Menu, NotificationsNone, Settings, Close} from '@mui/icons-material'
+import {Language, Menu, NotificationsNone, Settings} from '@mui/icons-material'
 import {motion} from "framer-motion"
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
